@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+
+</head>
+
+<body>
+
+
+<div class="topNav">
+    <img src="Group.png" alt="로고">
+    <div class="group">
+        <div class="buttons">
+            <button class="Home">Home</button>
+            <button class="About">About</button>
+            <button class="Support">Support</button>
+        </div>
+        <button class="download">Download</button>
+    </div>
+</div>
+
+<div class="mobiletop">
+    <img class="logo" src="Group.png"/>
+    <img class="menu" src="menu.svg"/>
+</div>
+
+<script>
+window.onscroll = function(){
+const topNav = document.querySelector(".topNav");
+
+    if (window.scrollY>topNav.clientHeight) {
+        topNav.classList.add("sticky");
+    } else {
+        topNav.classList.remove("sticky");
+    }
+};
+</script>
+
+
+<div class="whiteBackground">
+    <div class="mobileMenu">
+        <p class="arrow">→</p>
+        <div class="contentBox">
+            <p>Home</p>
+            <p>About</p>
+            <p>Support</p>
+            <button>Download</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+document.querySelector(".menu").addEventListener("click",function(){
+    const mobileMenu = document.querySelector(".whiteBackground");
+    mobileMenu.style.display="flex";
+});
+
+document.querySelector(".arrow").addEventListener("click",function(){
+    const close = document.querySelector(".whiteBackground");
+    close.style.display="none";
+});
+
+</script>
+
+
+
+<header >
+    <div class="container" id="imfirst">
+        <div class="container2">
+            <pre class="larTitle">Lorem Ipsum is simply
+dummy text of the printing and</pre>
+            <pre class="smaTitle">Lorem Ipsum is simply dummy text of the printing and
+typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text
+ever since the 1500s, when an unknown</pre>
+            <button class="download">Download</button>
+        </div>
+        <img class="boxCat" src="img_cat_png.png" alt="박스를 쓴 고양이">
+    </div>
+</header>
+
+<section>
+    <div class="top">
+        <img src="img_4.png" alt="누워있는 얼룩 고양이">
+        <div class="textBox">
+            <p class="larText">Lorem Ipsum is simply
+                dummy text of the printing
+                and dummy text</p>
+            <p class="smaText">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.</p>
+        </div>
+    </div>
+    <div class="firstText">
+        <div class="large">dummy text of the printing and dummy</div>
+        <div class="small">
+            <p>Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p></div>
+    </div>
+    <div class="cats">
+        <div class="firstLine">
+            <img src="img_1.png" alt="캣타워 위 고양이">
+            <img src="img_2.png" alt="콘센트 앞 고양이">
+            <img src="img_3 (1).png" alt="노려보는 고양이">
+        </div>
+        <div class="secondLine">
+            <img src="img_1 (1).png" alt="클로즈업 고양이">
+            <img src="img_2 (1).png" alt="올려보는 고양이">
+            <img src="img_3.png" alt="하품하는 고양이">
+        </div>
+
+    </div>
+    <div class="secondText">
+        <p>Continue exploring HODU</p>
+        <button>Show more</button>
+    </div>
+    <hr />
+</section>
+
+<footer>
+<div class="top">
+    <h2>Where you’ll be</h2>
+    <p class="small">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+
+    <img class=map src="Frame%206.png" alt="map">
+</div>
+
+<div class="darkBox">
+    <div class="content">
+        <div class="text">
+            <h2>Subscribe to our Blog post</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <form class="subscribe">
+            <div class="container">
+                <label for="inputEmail">
+                    <img src="mail.svg" alt="mailIcon"></label>
+                <input id="inputEmail" type="email" placeholder="Enter your e-mail address">
+            </div>
+            <button id="subscribeButton">Subscribe</button>
+        </form>
+    </div>
+</div>
+
+<div class="background">
+</div>
+
+<div class="modal">
+    <div class="modalContent">
+        <img src="cat%201.png">
+        <h2>Thank you!</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing industry. </p>
+        <button id="hodu">OK! I Love HODU</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("subscribeButton").addEventListener("click", function(event) {
+        event.preventDefault();
+        checkEmail();
+    })
+
+    function checkEmail() {
+        const email = document.getElementById('inputEmail').value;
+        const modal = document.querySelector(".modal");
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            window.alert('이메일 형식이 올바르지 않습니다.');
+        } else {
+            modal.style.display = "block";
+        }
+    }
+
+    document.getElementById("hodu").addEventListener("click", function (){
+        const modal = document.querySelector(".modal");
+        const form = document.querySelector(".subscribe");
+
+        form.submit();
+        modal.style.display="none";
+    })
+</script>
+
+<div class="bottonContainer">
+    <div class="bottomBar">
+        <img class=logo src="Group.png" alt="logo">
+        <nav class="buttons">
+            <a href="#"><img src="blog.png"></a>
+            <a href="#"><img src="instagram.png"></a>
+            <a href="#"><img src="facebook.png"></a>
+            <a href="#"><img src="youtube.png"></a>
+        </nav>
+        </div>
+    <div class="mobileMenuGroup">
+        <span>About</span>
+        <span>Blog</span>
+        <span>Support</span>
+        <span>Terms of Use</span>
+    </div>
+</div>
+</footer>
+
+<!--scrollTop-->
+<button class="scrollTopBtn" id="scrollTopBtnFirst">▲ </button>
+
+<script>
+    const scrollTopBtn=document.querySelector(".scrollTopBtn");
+
+
+window.addEventListener("scroll",function () {
+
+    if (window.scrollY>0) {
+        scrollTopBtn.classList.add("show");
+    } else {
+        scrollTopBtn.classList.remove("show");
+    }
+
+    const btnAt = scrollTopBtn.getBoundingClientRect().top + window.scrollY;
+    const footerTop = document.querySelector(".bottonContainer").offsetTop;
+
+    if (btnAt>=footerTop) {
+        scrollTopBtn.classList.add("fixBtn");
+    } else {
+        scrollTopBtn.classList.remove("fixBtn");
+    }
+
+});
+
+scrollTopBtn.addEventListener("click",function () {
+    window.scrollTo({
+        top:0,
+        behavior: "smooth"
+    });
+});
+
+
+</script>
+</body>
+</html>

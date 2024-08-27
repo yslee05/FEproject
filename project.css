@@ -1,0 +1,935 @@
+/*------------scrollTop 버튼-----------*/
+.scrollTopBtn.show {
+    display:block ;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.scrollTopBtn {
+    display: none;
+    color:     #C4C4C4;
+    background-color: white;
+    border: solid 1px #C4C4C4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.scrollTopBtn.fixBtn {
+    position: fixed;
+    bottom: 180px;
+}
+
+.scrollTopBtn:hover {
+    color: #767676;
+}
+
+@media (max-width: 376px) {
+    #scrollTopBtnFirst {
+        display: none;
+    }
+
+}
+/*-----------모바일 header---------*/
+@media (max-width: 376px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Pretendard;
+    }
+
+    .topNav {
+        display: none !important;
+    }
+
+    .mobiletop {
+        display: flex !important;
+        gap: 226px;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 20px;
+        background-color: #F2E9D8;
+
+    }
+
+    .mobiletop .logo {
+        width: 92px;
+        height: 28px;
+    }
+
+
+
+    header #imfirst {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-top:40px ;
+        gap: 30px;
+    }
+
+    header .container2 {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 30px;
+    }
+
+    header .container .larTitle {
+        white-space: normal;
+        overflow-wrap: break-word;
+        max-width: 251px;
+        margin: 0;
+
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    header .container .smaTitle {
+        white-space: normal;
+        overflow-wrap: break-word;
+        max-width: 270px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    header .container .download {
+        display: flex;
+        border: none;
+        font-size: 14px;
+        margin: 0;
+        width: 114px;
+        height: 40px;
+    }
+
+    header .container .boxCat {
+        width: 50% ;
+        height: auto ;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+
+/*----------모바일 메뉴창------------*/
+.whiteBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0px;
+
+    width: 289px;
+    height: 100%;
+    background-color:#263140 ;
+    color: white;
+}
+
+.mobileMenu .arrow {
+    display: flex;
+    margin-top: 22px;
+    margin-left: 20px;
+    width: 32px;
+    height: 32px;
+    gap: 30px;
+}
+
+.mobileMenu .contentBox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.mobileMenu button {
+    display: flex;
+    margin-top: 20px;
+    background-color: #D97652;
+    color: white;
+    width: 114px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.mobiletop,
+.whiteBackground {
+    display: none;
+}
+
+
+
+/*----------- 웹페이지-------------*/
+html,  body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%
+}
+
+.topNav {
+    position: relative;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 756px;
+
+    height: 102px;
+    width: 100%;
+    background-color: #F2E9D8 ;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.topNav img {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    margin-top: 31px;
+}
+
+.Home,
+.About,
+.Support {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 20;
+}
+
+.download  {
+    display: flex;
+    margin-top: 26px;
+    background-color: #D97652;
+    color: white;
+    width: 140px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+}
+
+
+
+/*---------------header--------------*/
+header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+
+    width: 100%;
+    background-color: #F2E9D8 ;
+}
+
+header .container  {
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+    padding: 0px;
+}
+.group {
+    display: flex;
+    gap: 15px;
+}
+.buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 41px;
+    }
+
+
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+
+}
+
+.larTitle {
+
+    font-size: 48px;
+    line-height: 60px;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+
+}
+.smaTitle {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+.container .boxCat {
+    display: flex;
+    margin-bottom: 0px;
+    width: 415px;
+    height: 766px;
+}
+
+
+/*--------section----------*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .top {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+    margin-top: 80px;
+}
+
+.top img {
+    width:660px;
+    height: 390px;
+}
+
+.top .larText {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    font-family: Pretendard;
+}
+
+.top .textBox {
+    max-width: 510px;
+}
+
+@media (max-width: 376px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        max-width: 326px;
+    }
+
+    .top .larText {
+        font-family: Pretendard;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+
+    .top .smaText {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .top img {
+        width: 326px;
+        height: 190px;
+    }
+
+}
+
+/*------웹 section---------*/
+section .firstText {
+    margin-top:120px ;
+    margin-bottom: 88px;
+    display: flex;
+    flex-direction: column;
+}
+
+section .large {
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color:#D97652 ;
+}
+
+section .small {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+section .small span {
+    color:#D97652 ;
+}
+
+
+
+section .cats {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+section .firstLine,
+section .secondLine {
+    display: flex;
+    gap: 73px;
+}
+
+.cats img {
+    width: 378px;
+    Height:378px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+
+section .secondText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+section .secondText p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+section .secondText button {
+    display: flex;
+    margin-top: 26px;
+    background-color: #D97652;
+    color: white;
+    width: 140px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+section hr {
+    display: flex;
+    height: 1px;
+    width: 1280px;
+    color: #C4C4C4
+}
+/*--------mobile section---------*/
+    @media (max-width: 376px) {
+        section .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            padding: 0;
+            gap: 0;
+        }
+        section .firstText {
+            margin: 0;
+            margin-bottom: 40px;
+        }
+
+        section .firstText .large {
+            margin-top: 60px;
+            margin-bottom: 30px;
+
+            font-size: 24px;
+            font-weight: 700;
+            font-family: Pretendard;
+            line-height: 30px;
+        }
+
+        .firstText .small {
+            margin: 0;
+            font-family: Pretendard;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .small p {
+            margin: 0;
+            line-height: 20px;
+            margin-bottom: 2px;
+        }
+
+        section .cats {
+            display:flex ;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .cats img {
+            width: 326px;
+            height: 326px;
+        }
+
+        .cats .firstLine ,
+        .cats .secondLine {
+            display:flex ;
+            flex-direction: column;
+            gap: 32px;
+            margin: 0;
+        }
+
+        section .secondText {
+            margin: 60px auto;
+            display: flex;
+            gap: 28px;
+        }
+
+        section .secondText p {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+
+
+        section .secondText button {
+            margin:0;
+            font-family: Pretendard;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+        }
+
+        section hr  {
+            width:326px ;
+        }
+
+    }
+/*----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*---------footer---------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.background {
+    position: relative;
+    box-sizing: border-box;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    z-index: 2;
+    width: 100%;
+    height: 340px;
+    background-size: cover;
+}
+
+
+footer h2 {
+    margin-top: 68px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+footer .small {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+footer .map {
+    margin-top: 48px;
+    margin-bottom: 80px;
+    width: 1280px;
+    height: 520px;
+    border-radius: 12px;
+}
+
+footer .darkBox {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+
+    gap: 163px;
+    width: 1280px;
+    height: 201px;
+    background-color: #263140;
+    color: white;
+    margin: 0;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+footer .content {
+    display: flex;
+    gap: 163px;
+    justify-content: space-between;
+}
+
+
+.darkBox h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    margin: 0;
+    margin-bottom: 12px;
+
+}
+
+.darkBox p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    color: #F2E9D8;
+}
+
+.subscribe {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+
+}
+
+.subscribe .container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+    width: 530px;
+    height: 60px;
+    border-radius: 30px;
+
+}
+
+.subscribe input,
+.subscribe button {
+    border:0;
+}
+
+.subscribe img {
+    margin-left: 28px;
+    margin-right: 16px;
+}
+
+.subscribe input {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.subscribe button {
+    display: flex;
+    width: 135px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+    right: 60px;
+
+    background-color: #D97652;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Pretendard;
+
+}
+
+.bottomBar {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    gap:826px ;
+    background-color: white;
+}
+
+.bottomBar nav {
+    margin: 0;
+}
+
+.bottomBar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 42px;
+    height: 42px;
+    background-color:#F29D52 ;
+    border-radius: 50px;
+}
+
+.bottomBar .buttons img {
+    width: 24px;
+    height: 24px;
+
+}
+
+.mobileMenuGroup {
+    display: none;
+}
+
+/*--------모바일 footer---------*/
+@media (max-width: 376px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    footer .top {
+        max-width: 326px;
+    }
+
+    footer .top h2 {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 16px;
+    }
+    footer .top .small {
+        color: #606367;
+    }
+    footer .map {
+        max-width: 326px;
+        height: 132px;
+        margin-top: 28px;
+        margin-bottom: 40px;
+    }
+
+    footer .darkBox {
+        max-width: 326px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 32px;
+    }
+
+    footer .content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 262px;
+    }
+
+    footer .text {
+        z-index: 100;
+    }
+
+    .darkBox .text h2 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 36px;
+        font-family: Pretendard;
+    }
+
+   .subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+       gap: 20px;
+
+
+    }
+
+    .subscribe .container {
+        width: 262px;
+        height: 40px;
+        padding: 11px 16px;
+        gap: 14px;
+        box-sizing: border-box;
+    }
+    .subscribe input {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .subscribe label {
+        padding: 0;
+    }
+
+    .subscribe button {
+        position: static;
+        width: 115px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 30px;
+    }
+
+    .subscribe img {
+        width: 18px;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .bottonContainer {
+
+        display: flex;
+        align-items: center;
+        margin:30px 20px 24px;
+        width: 80%;
+
+    }
+    .bottomBar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:58px ;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bottomBar .logo {
+        width: 112px;
+        height: 34px;
+    }
+
+    .bottomBar nav {
+        display: flex;
+        gap: 16px;
+    }
+
+    .bottomBar a {
+        width: 32px;
+        height: 32px;
+    }
+
+    .bottomBar .buttons img{
+        width: 18.29px;
+        height: auto;
+    }
+
+    .bottomBar .buttons {
+        margin: 0;
+    }
+
+    .bottonContainer .mobileMenuGroup {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 16px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #767676;
+    }
+
+    footer .background {
+        width: 100%;
+        height: 240px;
+        margin-top: -50px;
+        object-fit: cover
+
+    }
+}
+
+/*------------------------------------*/
+.modal {
+    display: none;
+    background-image: url("modal_back.png");
+    width: 600px;
+    height: 400px;
+    border-radius: 30px;
+}
+
+.modal .modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom:50px ;
+}
+
+.modal h2 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-family: Pretendard;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #D97652;
+}
+
+.modal p {
+    margin: 0;
+    font-family: Pretendard;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.modal button {
+    margin-top:38px;
+    width: 183px;
+    height: 50px;
+    background-color: #D97652;
+    color: white;
+    border-radius: 40px;
+    border:none;
+    /*padding: 15px 29px;*/
+
+    font-family: Pretendard;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
