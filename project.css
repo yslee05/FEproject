@@ -2,7 +2,7 @@
 .scrollTopBtn.show {
     display:block ;
     position: fixed;
-    bottom: 20px;
+    bottom: 180px;
     right: 20px;
     z-index: 100;
 }
@@ -52,6 +52,7 @@
         justify-content: center;
         align-items: center;
         padding: 24px 20px;
+        width: 100%;
         background-color: #F2E9D8;
 
     }
@@ -215,7 +216,6 @@ body {
     width: 130px;
     height: 40px;
     display: flex;
-    margin-top: 31px;
 }
 
 .Home,
@@ -226,18 +226,25 @@ body {
     font-size: 16px;
     font-weight: 20;
 }
-
-.download  {
+.topNav .buttons {
+    margin: 0;
     display: flex;
-    margin-top: 26px;
+    gap: 30px;
+}
+
+
+.topNav .download  {
+    display: flex;
     background-color: #D97652;
     color: white;
     width: 140px;
     height: 50px;
+
     justify-content: center;
     align-items: center;
     border-radius: 50px;
     border: none;
+    margin: 0;
 }
 
 
@@ -264,11 +271,6 @@ header .container  {
     display: flex;
     gap: 15px;
 }
-.buttons {
-    display: flex;
-    gap: 30px;
-    margin-top: 41px;
-    }
 
 
 
@@ -300,6 +302,20 @@ header .container  {
     margin-bottom: 0px;
     width: 415px;
     height: 766px;
+}
+
+header .download {
+    display: flex;
+    margin-top: 26px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+
+    background-color: #D97652;
+    color: white;
+    width: 140px;
+    height: 50px;
 }
 
 
@@ -354,6 +370,7 @@ section .top {
     .top .smaText {
         font-size: 14px;
         line-height: 18px;
+        font-weight: 400;
     }
 
     .top img {
@@ -699,6 +716,8 @@ footer .content {
 
 .bottomBar nav {
     margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
 .bottomBar a {
@@ -844,8 +863,7 @@ footer .content {
     }
 
     .bottomBar nav {
-        display: flex;
-        gap: 16px;
+
     }
 
     .bottomBar a {
@@ -859,7 +877,10 @@ footer .content {
     }
 
     .bottomBar .buttons {
+        display: flex;
+        gap: 16px;
         margin: 0;
+
     }
 
     .bottonContainer .mobileMenuGroup {
@@ -878,8 +899,33 @@ footer .content {
         width: 100%;
         height: 240px;
         margin-top: -50px;
-        object-fit: cover
+        object-fit: cover;
 
+    }
+    footer .modal {
+        width: 300px;
+        height: 300px;
+
+    }
+    .modal .modalContent p {
+        display:flex;
+        width: 200px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .modal .modalContent button {
+        margin: 0;
+    }
+    .modalContent img {
+        width: 60px;
+        height: auto;
+    }
+
+    .modal .modalContent h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
     }
 }
 

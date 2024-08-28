@@ -222,14 +222,7 @@ window.addEventListener("scroll",function () {
         scrollTopBtn.classList.remove("show");
     }
 
-    const btnAt = scrollTopBtn.getBoundingClientRect().top + window.scrollY;
-    const footerTop = document.querySelector(".bottonContainer").offsetTop;
 
-    if (btnAt>=footerTop) {
-        scrollTopBtn.classList.add("fixBtn");
-    } else {
-        scrollTopBtn.classList.remove("fixBtn");
-    }
 
 });
 
