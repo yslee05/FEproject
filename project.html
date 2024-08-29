@@ -152,7 +152,7 @@ ever since the 1500s, when an unknown</pre>
 
 <div class="background">
 </div>
-
+<div class="modalBackground">
 <div class="modal">
     <div class="modalContent">
         <img src="cat%201.png">
@@ -161,7 +161,7 @@ ever since the 1500s, when an unknown</pre>
         <button id="hodu">OK! I Love HODU</button>
     </div>
 </div>
-
+</div>
 <script>
     document.getElementById("subscribeButton").addEventListener("click", function(event) {
         event.preventDefault();
@@ -171,20 +171,24 @@ ever since the 1500s, when an unknown</pre>
     function checkEmail() {
         const email = document.getElementById('inputEmail').value;
         const modal = document.querySelector(".modal");
+        const modalBackground = document.querySelector(".modalBackground")
 
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             window.alert('이메일 형식이 올바르지 않습니다.');
         } else {
             modal.style.display = "block";
+            modalBackground.style.display="block";
         }
     }
 
     document.getElementById("hodu").addEventListener("click", function (){
         const modal = document.querySelector(".modal");
         const form = document.querySelector(".subscribe");
+        const modalBackground = document.querySelector(".modalBackground")
 
         form.submit();
         modal.style.display="none";
+        modalBackground.style.display="none";
     })
 </script>
 
