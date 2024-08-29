@@ -40,8 +40,8 @@ Github주소 :https://github.com/yslee05/FEproject/tree/master
    - <OK! I love HODU> 버튼 클릭시 폼 제출, 모달창 닫힘
    - 이메일 아이콘 label
 
-4. 모바일에서 레이아웃 변경  
-   섹션별로 @media (max-width: 375px) 이용하여 레이아웃 설정 
+4. 모바일에서 레이아웃 변경    
+   섹션별로 @media (max-width: 375px) 이용하여 레이아웃 설정   
    *안드로이드는 360 X 740px  iOS는 375 X 812px, 더 큰 ios를 경계로 설정
 
 5. 모바일 메뉴 창 열기 닫기
