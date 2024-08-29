@@ -19,19 +19,7 @@ Github주소 :https://github.com/yslee05/FEproject/tree/master
     2. 이메일 유효성 검사를 진행해야 합니다. (값이 들어가지 않거나 이메일 형식이 유효하지 않으면 alert 창으로 경고 문구가 떠야합니다.)
     3. 이메일이 잘 입력되었다면 모달창이 뜹니다. 이때 모달창의 `OK! I love HODU` 버튼을 클릭하면 form이 제출되고 모달창이 닫힙니다.
 5. (추가 과제)모바일 화면도 고려하여 반응형으로 제작합니다
-<br> <br> 
-
-## 파일 구조
-├── index.html               # 메인 HTML 파일 + JavaScript  
-├── project.css              # 스타일링을 위한 메인 CSS 파일  
-├── Group.png            # 로고 이미지  
-├── menu.svg             # 모바일 보기용 메뉴 아이콘  
-├── img_cat_png.png      # 헤더에 사용된 고양이 이미지  
-├── ...                  # 기타 이미지들  
-├── readMe                    # 프로젝트 설명 파일  
-└── 실행화면            #  readme에 들어갈 스크린샷
-<br> <br> 
-
+<br> <br>
 
 ## 기능 세부 설명
 1. 스크롤 시 상단바 (헤더) 상단 고정 
@@ -56,6 +44,18 @@ Github주소 :https://github.com/yslee05/FEproject/tree/master
    - 화살표 클릭시 메뉴창 없어짐
 
 <br> <br>  
+
+## 파일 구조
+├── index.html               # 메인 HTML 파일 + JavaScript  
+├── project.css              # 스타일링을 위한 메인 CSS 파일  
+├── Group.png            # 로고 이미지  
+├── menu.svg             # 모바일 보기용 메뉴 아이콘  
+├── img_cat_png.png      # 헤더에 사용된 고양이 이미지  
+├── ...                  # 기타 이미지들  
+├── readMe                    # 프로젝트 설명 파일  
+└── 실행화면            #  readme에 들어갈 스크린샷
+<br> <br> 
+
 
 ## 실행화면
 |                | 실행화면                                           |
